@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lear Git and Github</title>
-    <h1>Hello this is my first git repo</h1>
-    <h2>and first commit</h2>
-    <h2>Second commit after 2 daies</h2>
-    <h1>Hello this is my first git repo</h1>
-    <h2>and first commit</h2>
-    <h2>Second commit after 2 daies</h2>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function Hello() {
+        return <h1>HI</h1>;
+      }
+      
+      const container = document.getElementById('mydiv');
+      const root = ReactDOM.createRoot(container);
+      root.render(<Hello />)
+    </script>
+
+  </body>
 </html>
